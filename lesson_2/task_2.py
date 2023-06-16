@@ -17,6 +17,7 @@ def do_fraction_min(fr):
                 start_divider = i
     return fr
 
+
 if __name__ == '__main__':
     fr_1 = input('Введите первую дробь вида "12/43": ').split('/')
     fr_1 = [int (x) for x in fr_1]
