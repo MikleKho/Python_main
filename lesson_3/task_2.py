@@ -9,5 +9,6 @@ print('------------------')
 string_temp_set = set(string_temp_list)
 result_list = [(value, string_temp_list.count(value)) for value in string_temp_set]
 result_list.sort(key = lambda i: i[1], reverse = True)
-print(f'Список частых повторений слов: {result_list[0:10:1]}')
+# print(f'Список частых повторений слов: {result_list[0:10:1]}')
+print(f'Список частых повторений слов: {result_list[:10]}')
 print('------------------')
