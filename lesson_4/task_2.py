@@ -3,13 +3,9 @@
 
 def reverse_dict(**kwargs):
 
-    for key, value in kwargs.items():
-        print(f'Key: {key} Value: {value}')
-
     dict_reverse = {value: key for key, value in kwargs.items()}
-
-    for key, value in dict_reverse.items():
-        print(f'Key: {key} Value: {value}')
+    return dict_reverse
 
 
-reverse_dict(first_symbol = 'A', second_symbol = 'B', third_symbol = 'C')
+dict_out = reverse_dict(first_symbol = 'A', second_symbol = 'B', third_symbol = 'C')
+print(dict_out)
